@@ -1,0 +1,8 @@
+# Ignorar el entorno virtual de Python
+venv/
+
+# Ignorar el archivo de configuración de flake8
+.flake8
+
+# Ignorar las carpetas __pycache__ en cualquier parte del proyecto
+__pycache__/
