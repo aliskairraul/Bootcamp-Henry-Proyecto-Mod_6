@@ -2,20 +2,10 @@ import dash
 from dash import html, Output, Input, callback
 import pandas as pd
 import joblib
-import locale
-import logging
 
 from components.proj2_left_component import returned_comp_left2
 from components.proj2_right_component import proj_2_right
 
-# Configurar el logger
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
-
-try:
-    locale.setlocale(locale.LC_ALL, "en_US.UTF-8")
-except locale.Error:
-    logger.error("Locale en_US.UTF-8 no está disponible.")
 
 dash.register_page(__name__, path="/project-2", name="🚘 Propuesta-2 🚘")
 
@@ -124,7 +114,8 @@ def predicion_2(
 
         df_inputs = pd.DataFrame(inputs, index=[0])
         predicion = modelo.predict(df_inputs)
-        resultado = locale.format_string("%d", round(predicion[0]), grouping=True)
-        componente = html.Label(f"El resultado de la Prediccion es {resultado} $")
+        componente = html.Label(
+            f"El resultado de la Prediccion es {format(predicion[0], ',.2f')} $"
+        )
 
     return componente
