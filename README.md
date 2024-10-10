@@ -62,5 +62,8 @@ El resultado de la Predicion aparecerá justo debajo del Boton Predecir, como se
 <img src='assets/predecir_2.png'><br>
 <br>
 
+Despliegue: https://aliskairraul-mod-6.onrender.com/ <br>
+Video Explicativo: https://drive.google.com/file/d/1cTyxL9z8K0Cs--iE7TEGmlTIiIQ7Fatt/view?usp=sharing
+
 Este proyecto fue realizado por: Aliskair Rodríguez.<br>
 [linkedin.com/in/aliskair-rodriguez-782b3641](https://www.linkedin.com/in/aliskair-rodriguez-782b3641/)
